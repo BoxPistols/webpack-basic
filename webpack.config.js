@@ -24,8 +24,11 @@ module.exports = {
 		rules: [
 			{
 				test: /.jsx?$/,
-				include: [ path.resolve(__dirname, 'app') ],
+                // scope loader on js or jsx
+				include: [ path.resolve(__dirname, 'src/js') ],
+                // not scope
 				exclude: [ path.resolve(__dirname, 'node_modules') ],
+                // use loader
 				loader: 'babel-loader',
 				query: {
 					presets: [

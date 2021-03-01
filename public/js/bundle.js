@@ -10985,18 +10985,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_tax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tax */ "./src/js/modules/tax.js");
 
 
+ // * as
 
-// * as
-
-const itemA = 100
-const itemB = 203
-const totalPrice = Object(_modules_add__WEBPACK_IMPORTED_MODULE_1__["add"])(itemA, itemB)
-
-const taxNow = 1.1
-const resultPrice = Object(_modules_tax__WEBPACK_IMPORTED_MODULE_2__["tax"])(totalPrice, taxNow)
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').text(resultPrice)
-
+const itemA = 100;
+const itemB = 203;
+const totalPrice = Object(_modules_add__WEBPACK_IMPORTED_MODULE_1__["add"])(itemA, itemB);
+const taxNow = 1.1;
+const resultPrice = Object(_modules_tax__WEBPACK_IMPORTED_MODULE_2__["tax"])(totalPrice, taxNow);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').text(resultPrice);
 
 /***/ }),
 
@@ -11011,9 +11007,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').text(resultPrice)
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add", function() { return add; });
 function add(num1, num2) {
-	return num1 + num2
+  return num1 + num2;
 }
-
 
 /***/ }),
 
@@ -11028,9 +11023,8 @@ function add(num1, num2) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax", function() { return tax; });
 function tax(price, salesTax) {
-	return Math.round(price * salesTax)
+  return Math.round(price * salesTax);
 }
-
 
 /***/ })
 

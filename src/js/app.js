@@ -8,6 +8,6 @@ const totalPrice = add(itemA, itemB)
 
 const taxNow = 1.1
 
-const resultPrice = (totalPrice, taxNow)
+const resultPrice = tax(totalPrice, taxNow)
 
 $('body').text(resultPrice)

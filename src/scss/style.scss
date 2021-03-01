@@ -1,0 +1,13 @@
+@import './variables';
+
+body {
+	background: $black;
+	color: $white;
+	text-align: center;
+}
+
+.accent {
+	color: tomato;
+	font-weight: 600;
+	font: 2em serif;
+}

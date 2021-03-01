@@ -15,7 +15,8 @@ module.exports = {
 		filename: 'bundle.js',
         // output path
 		// --- path: path.join(__dirname, 'dist'),
-        path: path.join(__dirname, 'public/js')
+        // path: path.join(__dirname, 'public/js')
+        path: path.resolve(__dirname, 'public/js')
 		// publicPath: '/dist/',
 		// chunkFilename: '[name].js',
 	},

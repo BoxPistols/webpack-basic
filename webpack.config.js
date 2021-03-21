@@ -1,6 +1,9 @@
 // output.pathに指定するパスがOSによって異なることを
 // 防ぐためにpathモジュールを読み込んでおく
 const path = require('path')
+const outputPath = path.resolve(__dirname, 'public/js')
+// View on Terminal
+console.log(`Output Path => ${outputPath}`)
 
 module.exports = {
   // モードの設定（モードを指定しないとwebpack実行時に警告が出る）
@@ -12,7 +15,7 @@ module.exports = {
     // 出力するファイル名
     filename: 'bundle.js',
     // 出力先のパス（絶対パスを指定しないとエラーが出るので注意）
-    path: path.resolve(__dirname, 'public/js'),
+    path: outputPath,
   },
   module: {
     rules: [
@@ -56,3 +59,9 @@ module.exports = {
     ],
   },
 }
+
+/* ===== Note
+
+if select to config-file：
+npx webpack --config webpack.config.js
+===== */

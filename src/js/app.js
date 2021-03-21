@@ -1,6 +1,7 @@
 import $ from 'jquery'
 import { add as AddItem } from './modules/add'
 import { tax } from './modules/tax'
+import _ from 'lodash'
 // * as
 import '../scss/style.scss'
 
@@ -14,7 +15,7 @@ const resultPrice = tax(totalPrice, taxNow)
 // $('body').text(resultPrice)
 
 const head_1 = document.createElement('h1')
-head_1.textContent = 'Hello WebPack!!?'
+head_1.textContent = 'Hello WebPack£'
 head_1.className = 'head_1'
 document.body.appendChild(head_1)
 
@@ -25,7 +26,7 @@ document.body.appendChild(param)
 
 var div = document.getElementsByTagName('div')[0]
 
-// Clone Test
+// ===== Clone Test =====
 /*
   const p_prime = param.cloneNode(true)
   p_prime.className="p_prime"
@@ -33,10 +34,11 @@ var div = document.getElementsByTagName('div')[0]
   document.body.appendChild(p_prime)
 */
 
+/* ===== Lodash ===== */
 function component() {
   const el = document.createElement('div')
   const array = ['Hello', 'WebPack']
-  el.innerHTML = _.join(array, ' ')
+  el.innerHTML = _.join(array, '! ')
   return el
 }
 

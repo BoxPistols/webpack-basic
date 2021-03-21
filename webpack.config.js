@@ -61,7 +61,6 @@ module.exports = {
 }
 
 /* ===== Note
-
 if select to config-file：
 npx webpack --config webpack.config.js
 ===== */

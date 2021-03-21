@@ -14,7 +14,7 @@ const resultPrice = tax(totalPrice, taxNow)
 // $('body').text(resultPrice)
 
 const h1 = document.createElement('h1')
-h1.textContent = "Hello WebPack!"
+h1.textContent = "Hello WebPack!!?"
 document.body.appendChild(h1)
 
 const p = document.createElement('p')

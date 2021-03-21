@@ -1,4 +1,4 @@
-import $ from 'jquery'
+// import $ from 'jquery'
 import { add as AddItem } from './modules/add'
 import { tax } from './modules/tax'
 import _ from 'lodash'
@@ -15,7 +15,7 @@ const resultPrice = tax(totalPrice, taxNow)
 // $('body').text(resultPrice)
 
 const head_1 = document.createElement('h1')
-head_1.textContent = 'Hello WebPack£'
+head_1.textContent = 'Hello WebPack'
 head_1.className = 'head_1'
 document.body.appendChild(head_1)
 

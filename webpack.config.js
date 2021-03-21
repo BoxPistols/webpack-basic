@@ -17,6 +17,14 @@ module.exports = {
     // 出力先のパス（絶対パスを指定しないとエラーが出るので注意）
     path: outputPath,
   },
+	// ドキュメントルートの設定
+  devServer: {
+    contentBase: outputPath,
+		compress: true,
+		port: 9000,
+		historyApiFallback: true,
+		publicPath: '/'
+  },
   module: {
     rules: [
       {

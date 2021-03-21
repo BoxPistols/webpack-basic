@@ -1,28 +1,30 @@
 {
-    "name": "getting-webpack",
-    "version": "1.0.0",
-    "discription": "webpack develop",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack",
-        "dev": "webpack --mode development --watch --hide-modules"
-    },
-    "devDependencies": {
-        "css-loader": "^3.2.0",
-        "node-sass": "^4.12.0",
-        "sass-loader": "^8.0.0",
-        "style-loader": "^1.0.0",
-        "webpack": "^4.39.3",
-        "webpack-cli": "^3.3.7"
-    },
-    "dependencies": {
-        "@babel/core": "^7.13.8",
-        "@babel/preset-env": "^7.13.8",
-        "babel-loader": "^8.2.2",
-        "jquery": "^3.5.1",
-        "sass": "^1.32.8"
-    },
-    "keyword": [],
-    "author": "ai",
-    "license": "ISC"
+  "name": "getting-webpack",
+  "version": "1.0.0",
+  "discription": "webpack develop",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --mode development --watch --hide-modules",
+    "sv": "npx live-server"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "babel-loader": "^8.2.2",
+    "jquery": "^3.5.1",
+    "live-server": "^1.2.1",
+    "sass": "^1.32.8"
+  },
+  "keyword": [],
+  "author": "ai",
+  "license": "ISC"
 }

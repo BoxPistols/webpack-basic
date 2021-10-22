@@ -1,3 +1,3 @@
-export  function tax(price, salesTax) {
-	return Math.round(price * salesTax)
+export function tax(price, salesTax) {
+  return Math.round(price * salesTax)
 }

@@ -6,7 +6,7 @@ import _ from 'lodash'
 import '../scss/style.scss'
 
 const itemA = 1000
-const itemB = 2000
+const itemB = 2001
 const totalPrice = AddItem(itemA, itemB)
 
 const taxNow = 1.1
@@ -43,3 +43,8 @@ function component() {
 }
 
 document.body.appendChild(component())
+
+console.log(process.env.NODE_ENV)
+if (process.env.NODE_ENV === 'development') {
+  console.log('!!開発モードで動作中!!')
+}

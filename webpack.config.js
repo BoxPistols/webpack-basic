@@ -7,7 +7,8 @@ console.log(`Output Path => ${outputPath}`)
 
 module.exports = {
   // モードの設定（モードを指定しないとwebpack実行時に警告が出る）
-  mode: 'development',
+  mode: 'development', // development - production（本番）
+  devtool: 'eval-source-map', // 検証オプション
   // エントリーポイントの設定
   entry: './src/js/app.js',
   // 出力の設定
@@ -17,13 +18,13 @@ module.exports = {
     // 出力先のパス（絶対パスを指定しないとエラーが出るので注意）
     path: outputPath,
   },
-	// ドキュメントルートの設定
+  // ドキュメントルートの設定
   devServer: {
     contentBase: outputPath,
-		compress: true,
-		port: 9000,
-		historyApiFallback: true,
-		publicPath: '/'
+    compress: true,
+    port: 9000,
+    historyApiFallback: true,
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -41,7 +42,7 @@ module.exports = {
               '@babel/env',
               {
                 targets: {
-                  browsers: 'last 2 chrome versions',
+                  browsers: 'last 1 chrome versions',
                 },
               },
             ],
